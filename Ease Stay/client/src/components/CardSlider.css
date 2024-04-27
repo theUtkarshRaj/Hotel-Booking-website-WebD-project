@@ -1,0 +1,133 @@
+/* CardSlider.css */
+
+/* Card slider container */
+.card-slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Card slider */
+.card-slider {
+  display: flex;
+  margin-right: -20px; /* Adjust for margin between cards */
+}
+
+/* Individual card styles */
+.card {
+  flex: 0 0 calc(100% / 5);
+  margin-right: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease; /* Add transition effect */
+  border-radius: 8px;
+  overflow: hidden;
+  margin:1rem;
+  border:1px solid rgb(56, 54, 54);
+}
+
+/* Image inside the card */
+.card-image {
+  width:100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content inside the card */
+.card-content {
+  margin-top: 10px;
+}
+
+/* Title of the card */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Location text inside the card */
+.card-location {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Description text inside the card */
+.card-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Footer section of the card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid rgb(83, 80, 80);
+}
+
+/* Container for the price */
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Label for the price */
+.price-label {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Price text */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button for booking */
+.book-now-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Customize slick-prev and slick-next buttons */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(126, 117, 117, 0.5); /* Semi-transparent background */
+  color: #000; /* Black color */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.slick-prev {
+  left: 10px; /* Position left */
+}
+
+.slick-next {
+  right: 10px; /* Position right */
+}
+
+/* Change cursor style on hover */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(148, 138, 138, 0.589); /* Lighten background color on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Scale up by 5% on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}

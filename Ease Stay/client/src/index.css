@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+a:active, a:hover {
+  text-decoration: none;
+  color:rgb(90, 72, 209);
+  border: none;
+}
+.btn-1 {
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.btn-1:hover {
+  color: rgb(90, 72, 209);
+}
+
+.btn-1:active {
+  color: rgb(90, 72, 209);
+  background: transparent;
+  border: none;
+}
+
+
+.menu{
+  display: none;
+}
+
+@media (max-width:665px) {
+  .menu{
+    display: block;
+  }
+  .middle{
+    display: none;
+  }
+}
+
+
+.carousel-item {
+  transition: opacity 0s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Prevent the image from stretching */
+  margin: 0 auto; /* Center the image horizontally */
+  opacity: 0; /* Initially hide the image */
+}
+
+.carousel-item.active img {
+  opacity: 1; /* Show the image when it's active */
+}
